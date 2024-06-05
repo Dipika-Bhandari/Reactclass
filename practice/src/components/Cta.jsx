@@ -4,7 +4,7 @@ import React from 'react'
 
 export function Cta() {
   return (
-    <section className="py-10 bg-blue-100 ">
+    <section className="pt-4  bg-blue-100 align-middle ">
       <div className="mx-auto max-w-7xl">
       <div className="mx-auto max-w-2xl  text-center">
 
@@ -18,7 +18,7 @@ export function Cta() {
 
 <button
   type="button"
-  className="mt-8 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+  className="mt-8 mb-12 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
 >
   Contact Us Now
 </button>

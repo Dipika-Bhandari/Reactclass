@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowUpRight, ArrowRight, Calendar } from 'lucide-react'
+import { ArrowUpRight, ArrowRight, Calendar, ShareIcon, Share2 } from 'lucide-react'
 
 export function Card(props) {
   return (
@@ -23,11 +23,14 @@ export function Card(props) {
           <span className="mb-2 mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-[10px] font-semibold text-primary">
             {props.tag2}
           </span>
-          <span className=' inline-flex items-center gap-2'><Calendar className="h-4 w-4 text-gray-400" /> {props.date}</span>
+          <span className='inline-flex items-center gap-32'>
+          <span className=' inline-flex items-center gap-2'><Calendar className="h-4 w-4 text-hover" /> {props.date}</span>
+          <Share2 className="h-4 w-4 text-primary" />
+          </span>
         </div>
         <button
           type="button"
-          className="mt-4 w-full rounded-sm bg-primary px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="mt-4 w-full rounded-md bg-primary rounded-xxs px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           Read More
         </button>

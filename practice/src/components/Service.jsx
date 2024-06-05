@@ -22,8 +22,8 @@ export function Service() {
       </div>
       <div className="mt-12 grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
         <div>
-          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
-            <Monitor className="h-9 w-9 text-primary" />
+          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100 hover:bg-hover hover:text-white">
+            <Monitor className="h-9 w-9 text-primary hover:text-white" />
           </div>
           <h3 className="mt-8 text-lg font-semibold text-primary">Web Development</h3>
           <p className="mt-4 text-sm text-gray-600">
@@ -32,8 +32,8 @@ export function Service() {
           </p>
         </div>
         <div>
-          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
-            <Tangent className="h-9 w-9 text-primary" />
+          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100 hover:bg-hover hover:text-white">
+            <Tangent className="h-9 w-9 text-primary hover:text-white" />
           </div>
           <h3 className="mt-8 text-lg font-semibold text-primary">Web Design</h3>
           <p className="mt-4 text-sm text-gray-600">
@@ -42,8 +42,8 @@ export function Service() {
           </p>
         </div>
         <div>
-          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
-            <Router className="h-9 w-9 text-primary" />
+          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100 hover:bg-hover hover:text-white">
+            <Router className="h-9 w-9 text-primary hover:text-white" />
           </div>
           <h3 className="mt-8 text-lg font-semibold text-primary">Web Hosting</h3>
           <p className="mt-4 text-sm text-gray-600">
@@ -52,8 +52,8 @@ export function Service() {
           </p>
         </div>
         <div>
-          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
-            <Globe className="h-9 w-9 text-primary" />
+          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100 hover:bg-hover hover:text-white">
+            <Globe className="h-9 w-9 text-primary hover:text-white" />
           </div>
           <h3 className="mt-8 text-lg font-semibold text-primary">SEO Optimization</h3>
           <p className="mt-4 text-sm text-gray-600">

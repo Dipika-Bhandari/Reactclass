@@ -33,7 +33,7 @@ d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 1
 </div>
 <div className="text-center">
 <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
-Custom Development for Unique Digital Experiences.
+Custom <span className="text-hover">Development </span>  for Unique  Digital <span className="text-hover">Experiences.</span>
 </h1>
 <p className="mt-6 text-lg leading-8 text-gray-600">
 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
