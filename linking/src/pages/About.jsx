@@ -6,6 +6,8 @@ const About = () => {
     <>
    
     <div>I AM ABOUT</div>
+
+    <button onClick={() => window.history.back()}>Go back</button>
     </>
   )
 }
