@@ -1,28 +1,36 @@
 
 import * as React from 'react'
 import { Menu, X } from 'lucide-react'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 
 const menuItems = [
   {
     name: 'Home',
-    href: './pages/Home',
+    href: '/',
   },
   {
     name: 'About Us',
-    href: './pages/Aboutus',
+    href: '/about',
   },
   {
     name: 'Our Services',
-    href: '#',
+    href: '/services',
   },
   {
     name: 'Blog',
-    href: '#',
+    href: '/blog',
   },
 ]
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+
+  const navigate = useNavigate();
+
+  const navigateurl=(url)=>{
+    Navigate(url)
+  }
+  
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -50,16 +58,17 @@ export function Navbar() {
         </div>
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
-            {menuItems.map((item) => (
-              <li key={item.name}>
-                <a
-                  href={item.href}
-                  className="text-sm font-semibold text-white hover:text-hover"
-                >
+            {menuItems.map((item,index) => (
+              <Link to={item.href } key={index}>
+              <li >
+               
                   {item.name}
-                </a>
+                
               </li>
+              </Link>
             ))}
+
+           
           </ul>
         </div>
         <div className="hidden lg:block">
@@ -107,22 +116,27 @@ export function Navbar() {
                   </div>
                 </div>
                 <div className="mt-6">
+                
                   <nav className="grid gap-y-4">
                     {menuItems.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
+                        
+
+                       
                         className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
                       >
+                        
                         <span className="ml-3 text-base font-medium text-gray-900">
                           {item.name}
                         </span>
-                      </a>
+                      </Link>
                     ))}
                   </nav>
                 </div>
                 <button
-                  type="button"
+                  type="button" onClick={navigateurl(item.href)}
                   className="mt-4 w-full rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   Button text

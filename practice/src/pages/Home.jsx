@@ -18,11 +18,15 @@ const Home = () => {
   return (
     
     <>
-    <Navbar/>
+   
 
     <Hero/>
 
-    <About/>
+    <About
+    title="Where Creativity Meets Innovation"
+    content="We are a team of talented designers and developers with a passion for creating beautiful, modern websites."
+    button="Read More"
+    />
 
     <Service/>
 

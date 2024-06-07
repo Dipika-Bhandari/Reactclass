@@ -1,6 +1,6 @@
 import React from 'react'
 
-const About = () => {
+const About = (props) => {
   return (
     <section>
 
@@ -13,18 +13,17 @@ const About = () => {
           </p>
         </div>
          <h2 className="text-3xl font-bold mt-2 leading-tight text-primary sm:text-4xl lg:text-5xl">
-         Where Creativity Meets Technology.
+         {props.title}
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nesciunt eos facilis
-            debitis voluptas iure consectetur odit fugit voluptate recusandae?
+            {props.content}
           </p>
               <div className="flex w-full max-w-sm items-center mt-6 space-x-2">
                 <button
                   type="button"
                   className="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
-                Read more
+                {props.button}
                 </button>
               </div>
         </div>
