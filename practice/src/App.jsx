@@ -7,6 +7,7 @@ import Aboutus from './pages/Aboutus'
 import Blogpage from './pages/Blogpage'
 import Ourservices from './pages/Ourservices'
 import Contact from './pages/Contact'
+import Pagenotfound from './pages/Pagenotfound'
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
         <Route  path='/blog' element={<Blogpage/>}/>
         <Route  path='/services' element={<Ourservices/>}/>
         <Route  path='/contact' element={<Contact/>}/>
+
+        <Route path='/*' element={<Pagenotfound/>}/>
   </Routes>
     </>
   )

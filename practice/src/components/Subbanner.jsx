@@ -5,7 +5,8 @@ import Breadcrumb from "./Breadcrumb"
 const Subbanner = (props) => {
   return (
 <>
-    <div className="relative bg-blue-200 pb-20 mb-10 isolate z-0 bg-white px-6 pt-14 lg:px-8">
+<div className="relative bg-blue-200 pb-20 mb-10 isolate z-0 px-6 pt-14 lg:px-8 bg-custom-image bg-cover bg-center">
+
     
 
 <div className="text-center">
