@@ -15,6 +15,13 @@ import Usedtatehook from './pages/Usestatehook'
 import Useeffecthook from './pages/Useeffecthook'
 import Usestateobj from './pages/Usestateobj'
 import Onchangeevent from './pages/Onchangeevent'
+import Fetchdata from './pages/Fetchdata'
+import Sonila from './pages/Sonila'
+import { createContext } from 'react'
+
+export const paaisadeu = createContext();
+
+
 
 
 
@@ -39,6 +46,17 @@ function App() {
     <hr></hr>
 
     <Onchangeevent/>
+    <hr></hr>
+
+    <Fetchdata/>
+    <hr></hr>
+
+   <paaisadeu.Provider value={"50,000 rs"}>
+    <Sonila/>
+    </paaisadeu.Provider>
+
+
+    
 
 
    
