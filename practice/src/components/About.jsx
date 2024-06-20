@@ -1,6 +1,10 @@
 import React from 'react'
 
+
 const About = (props) => {
+  
+
+
   return (
     <section>
 
@@ -20,6 +24,7 @@ const About = (props) => {
           </p>
               <div className="flex w-full max-w-sm items-center mt-6 space-x-2">
                 <button
+                 onClick={props.onClick}
                   type="button"
                   className="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >

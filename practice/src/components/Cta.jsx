@@ -1,8 +1,16 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 
 export function Cta() {
+
+  const navigateme = useNavigate();
+
+  const pathao = () => {
+    navigateme('/contact')
+  }
+
   return (
     <section className="pt-4  bg-blue-100 align-middle ">
       <div className="mx-auto max-w-7xl">
@@ -17,8 +25,9 @@ export function Cta() {
 </p>
 
 <button
+  onClick={pathao}
   type="button"
-  className="mt-8 mb-12 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+  className="mt-8 mb-12 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
 >
   Contact Us Now
 </button>

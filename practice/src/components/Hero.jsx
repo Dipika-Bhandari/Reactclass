@@ -1,6 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
+
+  const navigateme = useNavigate();
+
+  const pathao = () => {
+    navigateme('/contact')
+  }
   return (
     <>
 <div className="relative isolate z-0 bg-white px-6 pt-14 lg:px-8">
@@ -41,6 +48,7 @@ commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
 </p>
 <div className="mt-10 flex items-center justify-center gap-x-2">
 <button
+onClick={pathao}
 type="button"
 className="rounded-md bg-primary  px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
 >

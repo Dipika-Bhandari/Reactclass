@@ -7,7 +7,15 @@ import Testimonials from '../components/Testimonials'
 import Faq from '../components/Faq'
 import Cta from '../components/Cta'
 
+import { useNavigate } from 'react-router-dom'
+
 const Aboutus = () => {
+
+  const navigateme = useNavigate();
+
+  const pathao = () => {
+    navigateme('/contact')
+  }
   return (
     <>
 <Subbanner
@@ -19,6 +27,7 @@ Breadcrumb="About Us"
 title="Our Story"
 content="We are a team of talented designers and developers with a passion for creating beautiful, modern websites.We are a team of talented designers and developers with a passion for creating beautiful, modern websites.We are a team of talented designers and developers with a passion for creating beautiful, modern websites.We are a team of talented designers and developers with a passion for creating beautiful, modern websites.We are a team of talented designers and developers with a passion for creating beautiful, modern websites.We are a team of talented designers and developers with a passion for creating beautiful, modern websites."
 button="Contact Us"
+onClick={pathao}
 />
 
 <div className="mt-10">

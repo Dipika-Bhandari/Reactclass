@@ -9,10 +9,19 @@ import Navbar from '../components/Navbar'
 import Service from '../components/Service'
 import Team from '../components/Team'
 import Testimonials from '../components/Testimonials'
+import { useNavigate } from 'react-router-dom'
 
 
 
 const Home = () => {
+
+  const navigateme = useNavigate();
+
+  const pathao = () => {
+    navigateme('/about')
+  } 
+
+  
 
 
   return (
@@ -26,6 +35,7 @@ const Home = () => {
     title="Where Creativity Meets Innovation"
     content="We are a team of talented designers and developers with a passion for creating beautiful, modern websites."
     button="Read More"
+    onClick={pathao}
     />
 
     <Service/>

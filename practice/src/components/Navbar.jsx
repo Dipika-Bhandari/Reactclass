@@ -6,7 +6,7 @@ import { Link, Navigate, useNavigate } from 'react-router-dom'
 const menuItems = [
   {
     name: 'Home',
-    href: '/',
+    href: '/home',
   },
   {
     name: 'About Us',
@@ -25,15 +25,18 @@ const menuItems = [
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
-  const navigate = useNavigate();
+ 
 
-  const navigateurl=(url)=>{
-    Navigate(url)
-  }
   
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
+  }
+
+  const navigate = useNavigate()
+  
+  const pathao = () => {
+    navigate('/contact')
   }
 
   return (
@@ -62,7 +65,7 @@ export function Navbar() {
               <Link to={item.href } key={index}>
               <li >
                
-                  {item.name}
+                  {item.name} 
                 
               </li>
               </Link>
@@ -73,6 +76,7 @@ export function Navbar() {
         </div>
         <div className="hidden lg:block">
           <button
+            onClick={pathao}
             type="button"
             className="rounded-md bg-white px-3 py-2 text-sm font-semibold text-primary shadow-sm hover:bg-gray-300 focus-visible:outline/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
@@ -118,28 +122,21 @@ export function Navbar() {
                 <div className="mt-6">
                 
                   <nav className="grid gap-y-4">
-                    {menuItems.map((item) => (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        
-
-                       
-                        className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
-                      >
-                        
-                        <span className="ml-3 text-base font-medium text-gray-900">
-                          {item.name}
-                        </span>
-                      </Link>
-                    ))}
+                  {menuItems.map((item,index) => (
+              <Link to={item.href } key={index}>
+              <li >
+               
+                  {item.name}
+                
+              </li>
+              </Link>
+            ))}
                   </nav>
                 </div>
                 <button
-                  type="button" onClick={navigateurl(item.href)}
                   className="mt-4 w-full rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
-                  Button text
+                  Contact Us
                 </button>
               </div>
             </div>
